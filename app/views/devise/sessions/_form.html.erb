@@ -1,0 +1,17 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |form| %>
+  <div class="flex flex-col justify-center items-center gap-4 mt-4">
+    <div class="field">
+      <%= form.label :email, class: "label" %>
+      <%= form.email_field :email, autofocus: true, autocomplete: "email", class: "input" %>
+    </div>
+  
+    <div class="field">
+      <%= form.label :password, class: "label" %>
+      <%= form.password_field :password, autocomplete: "current-password", class: "input" %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Sign in", class: "form-button" %>
+    </div>
+  </div>
+<% end %>
