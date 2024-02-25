@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/*
 
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+@layer base {
+  html {
+    font-family: Lato, Nunito, system-ui, sans-serif;
   }
 }
 
-*/
+@layer components {
+  form .input {
+    @apply block rounded-lg border border-orange mt-2 w-full;
+  }
+
+  form .label {
+    @apply block text-slate font-bold uppercase; 
+  }
+
+  form .form-button {
+    @apply rounded-lg text-white bg-orange px-4 py-2 w-full;
+  }
+}
+
+
