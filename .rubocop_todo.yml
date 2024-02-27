@@ -1,0 +1,6 @@
+Metrics/AbcSize:
+  Exclude:
+    - app/controllers/users/*.rb
+Metrics/MethodLength:
+  Exclude: 
+    - app/controllers/users/*.rb
