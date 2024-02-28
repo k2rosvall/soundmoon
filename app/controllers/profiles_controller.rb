@@ -10,7 +10,7 @@ class ProfilesController < ApplicationController
     if @profile.update(profile_params)
       redirect_to profile_path, notice: "Profile updated successfully"
     else
-      render :edit, :unprocessable_entitys
+      render :edit, :unprocessable_entity
     end
   end
 
