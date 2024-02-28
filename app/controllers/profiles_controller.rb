@@ -8,7 +8,7 @@ class ProfilesController < ApplicationController
 
   def update
     if @profile.update(profile_params)
-      redirect_to profile_path, notice: "Profile updated successfully"
+      redirect_to profile_path, notice: t("controllers.update.success", model: "Profile")
     else
       render :edit, :unprocessable_entity
     end
